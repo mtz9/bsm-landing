@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bin Solmoon</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bin Solmoon (BSM)</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+
+    .logo {
+      margin-top: 30px;
+      width: 120px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 5px;
+    }
+
+    .buy-button {
+      margin-top: 20px;
+      background: #00ff88;
+      padding: 15px 30px;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 10px;
+      text-decoration: none;
+      color: black;
+    }
+  </style>
 </head>
 <body>
-    <div id="loading-screen">
-        <h1>🚀 Launching Bin Solmoon...</h1>
-    </div>
-
-    <div class="main-content" style="display: none;">
-        <div class="logo-container">
-            <img src="logo.png" alt="Bin Solmoon Logo" class="logo">
-        </div>
-        <h1>Bin Solmoon</h1>
-        <p class="tagline">To the moon... from Riyadh 🌙</p>
-        <p class="tagline-ar">من الرياض إلى القمر 🚀</p>
-    </div>
-
-    <script>
-        // Simple loading screen
-        window.addEventListener('load', () => {
-            document.getElementById('loading-screen').style.display = 'none';
-            document.querySelector('.main-content').style.display = 'block';
-        });
-    </script>
+  <img src="logo.png" class="logo" />
+  <h1>To the Moon... from Riyadh</h1>
+  <p>من الریاض الی القمر</p>
+  <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2Z6pJYSBdNYFuueMvNvGGqMBaCFRmW9z9NiiAmyzt4g9" class="buy-button" target="_blank">Buy BSM</a>
 </body>
 </html>
