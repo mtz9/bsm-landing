@@ -4,21 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bin Solmoon (BSM)</title>
-
   <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background: url('background.png') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      text-align: center;
-    }
-    <body>
-       <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2Z6pJYSBdNYFuueMvNvGGqMBaCFRmW9z9NiiAmyzt4g9" class="buy-button" target="_blank">Buy BSM</a>
-
-    
-
+    /* Loader Style */
     #loader {
       position: fixed;
       width: 100%;
@@ -30,6 +17,16 @@
       align-items: center;
       font-size: 2rem;
       z-index: 9999;
+    }
+
+    /* Main Styles */
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
     }
 
     .logo {
@@ -49,6 +46,7 @@
 
     .buy-button {
       margin-top: 20px;
+      margin-bottom: 40px;
       background: #00ff88;
       padding: 15px 30px;
       border: none;
@@ -57,8 +55,10 @@
       border-radius: 10px;
       text-decoration: none;
       color: black;
+      display: inline-block;
     }
 
+    /* Responsive */
     @media (max-width: 600px) {
       h1 {
         font-size: 1.8rem;
@@ -80,14 +80,13 @@
     }
   </style>
 </head>
-
 <body>
   <div id="loader">🚀 Loading...</div>
 
   <img src="logo.png" class="logo" />
-  
+  <h1>To the Moon... from Riyadh</h1>
+  <p>من الریاض الی القمر</p>
   <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2Z6pJYSBdNYFuueMvNvGGqMBaCFRmW9z9NiiAmyzt4g9" class="buy-button" target="_blank">Buy BSM</a>
-
 
   <script>
     window.addEventListener("load", () => {
