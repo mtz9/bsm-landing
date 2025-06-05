@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bin Solmoon (BSM)</title>
+
   <style>
-    /* Loader Style */
+    /* لودینگ */
     #loader {
       position: fixed;
       width: 100%;
@@ -17,8 +18,8 @@
       align-items: center;
       font-size: 2rem;
       z-index: 9999;
+    }
 
-    /* Main Styles */
     body {
       margin: 0;
       font-family: sans-serif;
@@ -39,13 +40,12 @@
     }
 
     p {
-      font-size: 1.2rem;
-      margin-top: 5px;
+      font-size: 1.3rem;
+      margin: 5px 0 30px 0;
     }
 
     .buy-button {
       margin-top: 20px;
-      margin-bottom: 40px;
       background: #00ff88;
       padding: 15px 30px;
       border: none;
@@ -57,7 +57,7 @@
       display: inline-block;
     }
 
-    /* Responsive */
+    /* نسخه موبایل */
     @media (max-width: 600px) {
       h1 {
         font-size: 1.8rem;
@@ -82,10 +82,14 @@
 <body>
   <div id="loader">🚀 Loading...</div>
 
-<div class="buy-footer">
-  <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2Z6pJYSBdNYFuueMvNvGGqMBaCFRmW9z9NiiAmyzt4g9" class="buy-button" target="_blank">Buy BSM</a>
-</div>
-</body>
+ 
+
+  <!-- دکمه خرید در پایین صفحه -->
+  <div style="margin-top: 50px;">
+    <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2Z6pJYSBdNYFuueMvNvGGqMBaCFRmW9z9NiiAmyzt4g9"
+       class="buy-button" target="_blank">Buy BSM</a>
+  </div>
+
   <script>
     window.addEventListener("load", () => {
       const loader = document.getElementById("loader");
