@@ -24,9 +24,14 @@
       margin: 0;
       font-family: sans-serif;
       background: url('background.png') no-repeat center center fixed;
-      background-size: cover;
+      background-size: contain;
+      background-color: black;
       color: white;
       text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
     }
 
     .logo {
@@ -41,11 +46,10 @@
 
     p {
       font-size: 1.3rem;
-      margin: 5px 0 30px 0;
+      margin: 5px 0 20px 0;
     }
 
     .buy-button {
-      margin-top: 20px;
       background: #00ff88;
       padding: 15px 30px;
       border: none;
@@ -55,6 +59,11 @@
       text-decoration: none;
       color: black;
       display: inline-block;
+      margin-bottom: 40px;
+    }
+
+    .bottom {
+      margin-top: auto;
     }
 
     /* نسخه موبایل */
@@ -82,11 +91,8 @@
 <body>
   <div id="loader">🚀 Loading...</div>
 
- 
-
-  <!-- دکمه خرید در پایین صفحه -->
-  <div style="margin-top: 50px;">
-    <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2Z6pJYSBdNYFuueMvNvGGqMBaCFRmW9z9NiiAmyzt4g9"
+ <div class="bottom">
+   <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2Z6pJYSBdNYFuueMvNvGGqMBaCFRmW9z9NiiAmyzt4g9"
        class="buy-button" target="_blank">Buy BSM</a>
   </div>
 
