@@ -35,3 +35,10 @@ body {
     font-size: 1.2em;
     color: #00d084;
 }
+.buy-footer {
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
